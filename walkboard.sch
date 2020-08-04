@@ -424,26 +424,6 @@ Text GLabel 7500 2300 2    50   Input ~ 0
 D+
 Text GLabel 7500 2100 2    50   Input ~ 0
 D-
-$Comp
-L power:GND #PWR?
-U 1 1 5F2C7BBD
-P 7300 1900
-F 0 "#PWR?" H 7300 1650 50  0001 C CNN
-F 1 "GND" H 7305 1727 50  0000 C CNN
-F 2 "" H 7300 1900 50  0001 C CNN
-F 3 "" H 7300 1900 50  0001 C CNN
-	1    7300 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 1750 7150 1800
-Wire Wire Line
-	7150 1800 7300 1800
-Wire Wire Line
-	7300 1800 7300 1900
-Connection ~ 7150 1800
-Wire Wire Line
-	7150 1800 7150 1850
 Wire Wire Line
 	7150 1550 7300 1550
 $Comp
@@ -506,4 +486,48 @@ Wire Wire Line
 Connection ~ 6400 3050
 Wire Wire Line
 	6400 3050 6550 3050
+$Comp
+L Device:R_Small R?
+U 1 1 5F2A1C28
+P 7350 1850
+F 0 "R?" V 7154 1850 50  0000 C CNN
+F 1 "10k" V 7245 1850 50  0000 C CNN
+F 2 "" H 7350 1850 50  0001 C CNN
+F 3 "~" H 7350 1850 50  0001 C CNN
+	1    7350 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F2A2739
+P 7600 1750
+F 0 "R?" V 7404 1750 50  0000 C CNN
+F 1 "10k" V 7495 1750 50  0000 C CNN
+F 2 "" H 7600 1750 50  0001 C CNN
+F 3 "~" H 7600 1750 50  0001 C CNN
+	1    7600 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2A528D
+P 7800 1850
+F 0 "#PWR?" H 7800 1600 50  0001 C CNN
+F 1 "GND" H 7805 1677 50  0000 C CNN
+F 2 "" H 7800 1850 50  0001 C CNN
+F 3 "" H 7800 1850 50  0001 C CNN
+	1    7800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1750 7800 1750
+Wire Wire Line
+	7800 1750 7800 1850
+Wire Wire Line
+	7450 1850 7800 1850
+Connection ~ 7800 1850
+Wire Wire Line
+	7250 1850 7150 1850
+Wire Wire Line
+	7150 1750 7500 1750
 $EndSCHEMATC
